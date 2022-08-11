@@ -24,7 +24,7 @@ jobs:
               run: |
                 pwd
                 ls -la
-                zip --junk-paths dist dist
+                zip --junk-paths -r dist.zip dist
             - name: Create Release
               id: create_release
               uses: actions/create-release@v1
