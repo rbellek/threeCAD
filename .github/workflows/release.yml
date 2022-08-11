@@ -22,6 +22,8 @@ jobs:
                 npm run build
             - name: Build project
               run: |
+                pwd
+                ls -la
                 zip --junk-paths dist dist
             - name: Create Release
               id: create_release
