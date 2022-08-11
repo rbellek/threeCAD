@@ -6,8 +6,8 @@ on:
         - 'v*'
 
 jobs:
-    publish:
-        name: publish
+    release:
+        name: release
         runs-on: ubuntu-latest
         steps:
             - name: checkout
@@ -16,7 +16,7 @@ jobs:
               uses: actions/setup-node@v3
               with:
                   node-version: 12
-            - name: publish
+            - name: release
               run: |
                 npm i
                 npm run build
