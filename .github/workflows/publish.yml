@@ -19,4 +19,4 @@ jobs:
             - name: publish
               run: |
                 npm i
-                run: npm run build
+                npm run build
