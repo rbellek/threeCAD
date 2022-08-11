@@ -22,7 +22,7 @@ jobs:
                 npm run build
             - name: Build project
               run: |
-                zip --junk-paths my-artifact README.md
+                zip --junk-paths dist README.md
             - name: Create Release
               id: create_release
               uses: actions/create-release@v1
